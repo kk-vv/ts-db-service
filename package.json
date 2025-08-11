@@ -1,0 +1,26 @@
+{
+  "name": "@move.box/db-service",
+  "version": "1.0.0",
+  "description": "mysql2 utils",
+  "keywords": [
+    "mysql2",
+    "utils"
+  ],
+  "author": "kk-vv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kk-vv/ts-db-service.git"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "mysql2": "^3.14.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
