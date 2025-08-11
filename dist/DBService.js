@@ -3,12 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DBService = void 0;
+exports.DBError = exports.DBService = void 0;
 exports.createDBService = createDBService;
 exports.queryDateToTimestamp = queryDateToTimestamp;
 exports.queryTimestampFromDate = queryTimestampFromDate;
 const promise_1 = __importDefault(require("mysql2/promise"));
 const DBError_1 = require("./DBError");
+Object.defineProperty(exports, "DBError", { enumerable: true, get: function () { return DBError_1.DBError; } });
 function createDBService(config) {
     const pool = promise_1.default.createPool(config);
     return new DBService(pool);
@@ -86,3 +87,4 @@ function queryTimestampFromDate(date, type = 'mysql') {
             return `FROM_UNIXTIME(${date})`;
     }
 }
+exports.default = DBService;

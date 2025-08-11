@@ -1,4 +1,5 @@
 import mysql, { PoolOptions } from 'mysql2/promise';
+import { DBError } from './DBError';
 export declare function createDBService(config: PoolOptions): DBService;
 export declare class DBService {
     private pool;
@@ -12,3 +13,5 @@ export declare class DBService {
 }
 export declare function queryDateToTimestamp(columnName: string, type?: 'psql' | 'mysql', as?: string): string;
 export declare function queryTimestampFromDate(date: any | number | bigint, type?: 'psql' | 'mysql'): string;
+export { DBError };
+export default DBService;

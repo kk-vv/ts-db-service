@@ -83,3 +83,7 @@ export function queryTimestampFromDate(date: any | number | bigint, type: 'psql'
       return `FROM_UNIXTIME(${date})`
   }
 }
+
+export { DBError }
+
+export default DBService
