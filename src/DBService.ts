@@ -8,7 +8,7 @@ export function createDBService(config: PoolOptions) {
 
 export class DBService {
 
-  pool: mysql.Pool
+  private pool: mysql.Pool
 
   constructor(pool: mysql.Pool) {
     this.pool = pool
