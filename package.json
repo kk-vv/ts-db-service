@@ -1,6 +1,6 @@
 {
   "name": "@move.box/db-service",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "mysql2 utils",
   "keywords": [
     "mysql2",
@@ -29,6 +29,6 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "rm -rf dist && tsc"
   }
 }
