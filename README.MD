@@ -2,6 +2,12 @@
 
 ### Usage
 
+- Install 
+
+```
+npm i @move.box/db-service
+```
+
 - Create service 
 
 ```
